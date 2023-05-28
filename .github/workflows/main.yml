@@ -24,6 +24,6 @@ jobs:
 
         
 
-    - name: run
+    - name: abc114514
 
         python zipbomb.py
