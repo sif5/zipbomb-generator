@@ -4,31 +4,26 @@ on: [push]
 
 jobs:
 
-  build:
+  fetch:
 
     runs-on: ubuntu-latest
 
     steps:
 
-    - name: checkout actions
+    - uses: actions/checkout@v3
 
-    - uses: actions/checkout@v1
+    - name: Set up Python 3.10
 
-    - name: Set up Python 3.7
-
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v3
 
       with:
 
-        python-version: 3.7
-
+        python-version: "3.10"
         
-
-    - name: Update paper list
+    - name: Fetch Subscriptions
 
       run: |
 
         python zipboom.py
-        
         
         
