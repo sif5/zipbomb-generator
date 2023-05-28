@@ -1,4 +1,4 @@
-Zip bomb tools
+Zip bomb tool
 https://www.bamsoftware.com/hacks/zipbomb/
 David Fifield <david@bamsoftware.com>
 Public domain
